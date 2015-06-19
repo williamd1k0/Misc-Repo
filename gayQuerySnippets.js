@@ -21,12 +21,12 @@ function checkUpdate(){
         lastVersion[i] = parseInt(lastVersion[i]);
     }
     if(atualVersion[0] < lastVersion[0]){
-    alert('nova versão maior disponivel');
-}else if (atualVersion[1] < lastVersion[1]){
-    alert('nova versão menor disponivel');
-}else if (atualVersion[2] < lastVersion[2]){
-    alert('nova versão ajuste disponivel');
-}else{
-    alert('atualizado');
-}
+        alert('nova versão maior disponivel');
+    }else if (atualVersion[1] < lastVersion[1]){
+        alert('nova versão menor disponivel');
+    }else if (atualVersion[2] < lastVersion[2]){
+        alert('nova versão ajuste disponivel');
+    }else{
+        alert('atualizado');
+    }
 }
