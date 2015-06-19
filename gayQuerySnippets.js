@@ -13,7 +13,10 @@ if(lastVersion === ''){
     checkUpdate();
 }
 
-
+function noConnect(){
+    alert("sem conexão!")
+    window.location.replace("noconnect.html");
+}
 
 function checkUpdate(){
     lastVersion = lastVersion.split(".");
