@@ -1,3 +1,34 @@
+# Markdown Issue Guide
+Basic guide to ease issues solution by using *GitHub Flavored Markdown*.
+
+## What is Markdown?
+If you don't know what is Markdown, take a look at this [basic tutorial](https://guides.github.com/features/mastering-markdown/).
+
+## Showing piece of code in your issue
+
+Using Markdown [code block](https://help.github.com/articles/creating-and-highlighting-code-blocks/), set the language to Ren'Py typing `renpy` after the <code>```</code>:
+
+<pre><code>
+```renpy
+# Ren'Py statements
+```
+</code></pre>
+
+## Showing errors and trackbacks
+
+Using code block again, set the language to `python-traceback`.
+
+<pre><code>
+```python-traceback
+# Content of the "traceback.txt"
+```
+</code></pre>
+
+***
+
+## Simple issue example
+
+A simple error caused by an undefined character:
 
 ```renpy
 define test_char = Character('Test Char')
@@ -9,8 +40,9 @@ label start:
     undefined_char "Hello!"
     
     return
-
 ```
+
+Traceback file:
 
 ```python-traceback
 I'm sorry, but an uncaught exception occurred.
@@ -33,6 +65,5 @@ Exception: Sayer 'undefined_char' is not defined.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.7.858
-teste_videos 0.0
-
+simple_test 0.0
 ```
